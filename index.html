@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Linh❤️Chinh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-buttons">
+    <button id="musicToggle" class="circle-btn music-off" aria-label="Bật/Tắt nhạc"></button>
+    <button id="scrollTopBtn" class="circle-btn hidden" aria-label="Cuộn lên đầu trang"></button>
+  </div>
+
+  <!-- MUSIC -->
+  <audio id="bgm" loop preload="none">
+    <source src="assets/music/beautifulinwhite.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- OPENING -->
+  <div class="opening-overlay" id="opening" aria-hidden="false">
+    <div class="doors" aria-label="Mở thiệp">
+      <div class="door left" id="doorL"></div>
+      <div class="door right" id="doorR"></div>
+    </div>
+    <div class="invite-title" id="inviteTitle">Save the Date</div>
+    <div class="hearts" id="hearts"></div>
+  </div>
+
+  <main class="page">
+    <!-- HERO -->
+    <header class="section" id="heroSec">
+      <div class="hero" id="hero" role="img" aria-label="Ảnh Trọng & Hiên">
+        <img src="assets/images/album10.jpg" alt="Ảnh Trọng & Hiên" class="hero-img hero-img-1">
+        <img src="assets/images/album11.jpg" alt="Ảnh Trọng & Hiên" class="hero-img hero-img-2">
+      </div>
+    </header>
+
+    <section class="hero-info">
+      <div class="couplename-section">
+        <div class="couplename-text fade-in-up">
+          <div class="couple-groom">Quang Linh</div>
+          <div class="heart-divider">💕</div>
+          <div class="couple-bride">Tuyết Chinh</div>
+        </div>
+      </div>
+      <div class="wedding-date">
+        <div class="side left">
+          <span>Thứ Tư</span>
+          <span>10:30</span>
+        </div>
+        <div class="center">28</div>
+        <div class="side right">
+          <span>Tháng 1</span>
+          <span>2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAMILY -->
+    <section class="section" id="story">
+      <h2>Gia đình</h2>
+      <div class="family-card">
+        <div class="family-side left">
+          <h3>Nhà Trai</h3>
+          <p>Lê Văn Ánh</p>
+          <p>Nguyễn Thị Hoa Tranh</p>
+        </div>
+        <div class="family-side right">
+          <h3>Nhà Gái</h3>
+          <p>Bùi Xuân Tình</p>
+          <p>Ngô Thị Lư</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invite message -->
+    <section class="invite-message">
+      <p>Thân mời quý vị đến dự bữa tiệc thân mật mừng lễ thành hôn cùng hai gia đình chúng tôi</p>
+      <p>Quang Linh & Tuyết Chinh</p>
+      <p>Vào lúc 17 giờ 00 phút | Thứ Ba</p>
+      <p>27.01.2026</p>
+      <p>(Tức ngày 9 tháng 12 năm Ất Tỵ)</p>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section" id="event">
+      <h2>Địa điểm tổ chức</h2>
+      <div class="grid">
+        <article class="card-grid">
+          <div class="body">
+            <p><strong>Tư gia nhà trai</strong></p>
+            <p>Thôn Trường An, phường Tây Hoa Lư, tỉnh Ninh Bình</p>
+            <a href="https://www.google.com/maps/place/Th%C3%B4n+Tr%C6%B0%E1%BB%9Dng+AN,+Th%C3%B4n+Tr%C6%B0%E1%BB%9Dng+An,+Hoa+L%C6%B0,+Ninh+B%C3%ACnh+430000,+Vi%E1%BB%87t+Nam/@20.2698239,105.9097323,17z/data=!4m15!1m8!3m7!1s0x313679d558fcd92b:0xcbaac7e6fa30e2a1!2zVGjDtG4gVHLGsOG7nW5nIEFOLCBUaMO0biBUcsaw4budbmcgQW4sIEhvYSBMxrAsIE5pbmggQsOsbmggNDMwMDAwLCBWaeG7h3QgTmFt!3b1!8m2!3d20.2698189!4d105.9146032!16s%2Fg%2F11vwx5xz49!3m5!1s0x313679d558fcd92b:0xcbaac7e6fa30e2a1!8m2!3d20.2698189!4d105.9146032!16s%2Fg%2F11vwx5xz49?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener" class="map-btn">Xem bản đồ</a>
+          </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <h2>Album ảnh cưới</h2>
+      <div class="carousel-wrap owl-carousel" aria-label="Ảnh nổi bật">
+        <a class="item" href="assets/images/album1.jpg" data-lightbox="album"><img src="assets/images/album1.jpg" alt="Ảnh cưới 1" loading="lazy"></a>
+        <a class="item" href="assets/images/album2.jpg" data-lightbox="album"><img src="assets/images/album2.jpg" alt="Ảnh cưới 2" loading="lazy"></a>
+        <a class="item" href="assets/images/album3.jpg" data-lightbox="album"><img src="assets/images/album3.jpg" alt="Ảnh cưới 3" loading="lazy"></a>
+        <a class="item" href="assets/images/album4.jpg" data-lightbox="album"><img src="assets/images/album4.jpg" alt="Ảnh cưới 4" loading="lazy"></a>
+        <a class="item" href="assets/images/album5.jpg" data-lightbox="album"><img src="assets/images/album5.jpg" alt="Ảnh cưới 5" loading="lazy"></a>
+        <a class="item" href="assets/images/album6.jpg" data-lightbox="album"><img src="assets/images/album6.jpg" alt="Ảnh cưới 6" loading="lazy"></a>
+        <a class="item" href="assets/images/album7.jpg" data-lightbox="album"><img src="assets/images/album7.jpg" alt="Ảnh cưới 7" loading="lazy"></a>
+        <a class="item" href="assets/images/album8.jpg" data-lightbox="album"><img src="assets/images/album8.jpg" alt="Ảnh cưới 8" loading="lazy"></a>
+        <a class="item" href="assets/images/album9.jpg" data-lightbox="album"><img src="assets/images/album9.jpg" alt="Ảnh cưới 9" loading="lazy"></a>
+        <a class="item" href="assets/images/album10.jpg" data-lightbox="album"><img src="assets/images/album10.jpg" alt="Ảnh cưới 10" loading="lazy"></a>
+        <a class="item" href="assets/images/album11.jpg" data-lightbox="album"><img src="assets/images/album11.jpg" alt="Ảnh cưới 11" loading="lazy"></a>
+      </div>
+
+      <div class="album" aria-live="polite">
+        <a class="photo tall" href="assets/images/album1.jpg" data-lightbox="album"><img src="assets/images/album1.jpg" alt="Ảnh album 1" loading="lazy"></a>
+        <a class="photo wide" href="assets/images/album2.jpg" data-lightbox="album"><img src="assets/images/album2.jpg" alt="Ảnh album 2" loading="lazy"></a>
+        <a class="photo" href="assets/images/album4.jpg" data-lightbox="album"><img src="assets/images/album4.jpg" alt="Ảnh album 4" loading="lazy"></a>
+        <a class="photo" href="assets/images/album5.jpg" data-lightbox="album"><img src="assets/images/album5.jpg" alt="Ảnh album 5" loading="lazy"></a>
+        <a class="photo" href="assets/images/album6.jpg" data-lightbox="album"><img src="assets/images/album6.jpg" alt="Ảnh album 6" loading="lazy"></a>
+        <a class="photo" href="assets/images/album7.jpg" data-lightbox="album"><img src="assets/images/album7.jpg" alt="Ảnh album 7" loading="lazy"></a>
+        <a class="photo" href="assets/images/album8.jpg" data-lightbox="album"><img src="assets/images/album8.jpg" alt="Ảnh album 8" loading="lazy"></a>
+        <a class="photo" href="assets/images/album9.jpg" data-lightbox="album"><img src="assets/images/album9.jpg" alt="Ảnh album 9" loading="lazy"></a>
+        <a class="photo" href="assets/images/album10.jpg" data-lightbox="album"><img src="assets/images/album10.jpg" alt="Ảnh album 10" loading="lazy"></a>
+        <a class="photo" href="assets/images/album11.jpg" data-lightbox="album"><img src="assets/images/album11.jpg" alt="Ảnh album 11" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- COUPLE NAME-->
+    <section class="couplename-section" style="margin:2rem 0">
+      <h1 class="couplename-text" style="margin: bottom 10px;"><span class="couple-groom">Quang Linh</span> & <span class="couple-bride">Tuyết Chinh</span></h1>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="time">17:00 Đón khách</div>
+          <div class="content"><img src="assets/icons/flowers.png" alt="Đón khách" loading="lazy"></div>
+        </div>
+        <div class="timeline-item right">
+          <div class="time">17:15 Đón dâu</div>
+          <div class="content"><img src="assets/icons/wedding.png" alt="Đón dâu" loading="lazy"></div>
+        </div>
+        <div class="timeline-item left">
+          <div class="time">17:30 Ăn tiệc</div>
+          <div class="content"><img src="assets/icons/eat.png" alt="Ăn tiệc" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invite message-->
+    <section class="invite-message">
+      <p>Thật vui nếu bạn góp mặt tại bữa tiệc mừng hạnh phúc của chúng tôi</p>
+      <p>và cùng lưu giữ những khoảnh khắc ý nghĩa.</p>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="section" id="calendarSec">
+      <div class="calendar">
+        <h2>Tháng 1 Năm 2026</h2>
+        <div class="calendar-grid" role="grid">
+          <div class="day-label">T2</div><div class="day-label">T3</div><div class="day-label">T4</div><div class="day-label">T5</div><div class="day-label">T6</div><div class="day-label">T7</div><div class="day-label">CN</div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="day">1</div><div class="day">2</div><div class="day">3</div>
+          <div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div>
+          <div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div>
+          <div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div>
+          <div class="day">25</div><div class="day">26</div><div class="day special" aria-label="Ngày cưới 27/1/2026"><span class="heart">❤️</span>27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section" id="countdownSec">
+      <h2>Đếm ngược thời gian</h2>
+      <div id="countdown" class="countdown"></div>
+    </section>
+
+    <!-- WEDDING POEM -->
+    <section class="wedding-poem">
+      <img src="assets/icons/rings.png" alt="Nhẫn cưới" class="center-icon">
+      <p class="line left">Một ngày để nhớ trọn đời,</p>
+      <p class="line right">Chúng mình chung bước, gọi mời yêu thương.</p>
+      <p class="line left">Cảm ơn vì đã đến cùng,</p>
+      <p class="line right">Chung vui hạnh phúc — kết vòng phu thê.</p>
+    </section>
+
+    <!-- GIFTS -->
+    <section class="section" id="gift">
+      <h2>Gửi Mừng Cưới</h2>
+      <div class="grid">
+        <div class="card-grid gift-card">
+          <h4 class="gift-to">ĐẾN CHÚ RỂ</h4>
+          <img class="qr" src="assets/images/QR.png" alt="">
+          <div class="body">
+            <p><b>TECHCOMBANK</b></p>
+            <p>Lê Quang Linh</p>
+            <p><span class="account">19039957584017</span></p>
+            <button class="copy-btn" data-copy="19039957584017">Sao chép</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 class="footer-title">Cảm Ơn Bạn! 💕</h2>
+        <p class="footer-sub">Rất mong được đón tiếp bạn trong</p>
+        <p class="footer-sub">ngày lễ thành hôn của chúng mình</p>
+        <div class="footer-decor"></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
